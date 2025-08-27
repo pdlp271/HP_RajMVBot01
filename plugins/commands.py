@@ -285,9 +285,9 @@ async def start(client, message):
                 else:
                     howtodownload = settings.get('tutorial_2', TUTORIAL_2) if is_second_shortener else settings.get('tutorial', TUTORIAL)
                 buttons = [[
-                    InlineKeyboardButton(text="♻️ ᴠᴇʀɪꜰʏ ♻️", url=verify)
+                    InlineKeyboardButton(text="♻️ ɢᴇɴᴇʀᴀᴛ ᴛᴏᴋᴇɴ ♻️", url=verify)
                 ],[
-                    InlineKeyboardButton(text="⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=howtodownload)
+                    InlineKeyboardButton(text="⁉️ ʜᴏᴡ ᴛᴏ ɢᴇɴᴇʀᴀᴛ ᴛᴏᴋᴇɴ ⁉️", url=howtodownload)
                 ]]
                 reply_markup=InlineKeyboardMarkup(buttons)
                 if await db.user_verified(user_id): 
